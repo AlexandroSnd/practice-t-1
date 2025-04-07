@@ -52,31 +52,22 @@ blockquote {
   border-radius: 4px;
 }
 
-.spoiler details[open] summary {
-  border-bottom: 1px solid #ccc;
-}
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* summary всегда видим */
-details summary {
-  opacity: 1; /* summary всегда виден */
+.spoiler details{
+  opacity: 0;
+}
+.spoiler details[open] {
+  opacity: 1;
 }
 
-/* Скрываем весь контент внутри <details>, кроме <summary> */
-details > *:not(summary) {
-  opacity: 0; /* Скрываем контент по умолчанию */
-  transition: opacity 1s ease-in-out;
-}
-
-/* Когда <details> открыты, делаем контент видимым с анимацией */
-details[open] > *:not(summary) {
-  opacity: 1; /* Показываем контент при открытии */
-  animation: fadeIn 1s ease-in-out forwards;
-}
 
 
 

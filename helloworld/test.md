@@ -1,7 +1,6 @@
 # Заголовок h1
 
-This is a smile emoji: :smile: !!!
-And here is a rocket: :rocket: :rocket:
+Emoji: :fire:
 
 ```ts
 console.log('Hello, world!');
@@ -13,15 +12,14 @@ console.log('Hello, world!');
 Это блок предупреждения
 :::
 
-??? spoiler "Заголовок"
-Скрытый контент.
+??? spoiler 
+"Заголовок"
 ???
 
-``` mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+```mermaid
+graph TD
+  A --> B
+  B --> C
+  C --> D
+
 
