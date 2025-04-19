@@ -3,7 +3,7 @@ setTimeout(() => {
   detailsElements.forEach(details => {
     details.addEventListener('toggle', () => {
       if (details.open) {
-        details.style.animation = 'fadeIn 6s';
+        details.style.animation = 'fadeIn 1s';
       }
     });
   });
