@@ -16,9 +16,7 @@
   "contributes": {
     "markdown.markdownItPlugins": true,
     "markdown.previewScripts": [
-      "./scripts/preview.js",
-      "./scripts/mermaid.min.js",
-      "./scripts/mermaid.js"
+      "./scripts/preview.js"
     ],
     "markdown.previewStyles": [
       "./styles/github-style.css"
@@ -55,7 +53,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-container": "^4.0.0",
     "markdown-it-emoji": "^3.0.0",
-    "markdown-it-mermaid": "^0.2.0",
+    "markdown-it-mermaid": "^0.2.5",
     "mermaid": "^11.6.0",
     "tsx": "^4.19.3"
   }

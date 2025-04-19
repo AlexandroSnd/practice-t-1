@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import markdownItContainer from 'markdown-it-container';
 import { full as emoji } from 'markdown-it-emoji'
+import markDownItMermaid from 'markdown-it-mermaid'
 
 export function activate(context: vscode.ExtensionContext) {
   return {
@@ -24,6 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
         }
       });
       md.use(emoji);
+      md.use(markDownItMermaid)
       return md;
     }
   };
